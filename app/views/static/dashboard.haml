@@ -1,0 +1,40 @@
+%h2
+  = t('.title', name: @user.name)
+
+%section.last-messages
+  %h1= t('.last-message-title')
+  %ol
+    - @last_messages.each do |message|
+      %li
+        = link_to message.title, message_path(message)
+        = l(message.updated_at)
+        = message.user_name
+  %p
+    = link_to t('.messages'), messages_path
+    = link_to t('.post_new_message'), new_message_path
+
+%section.last-lessons
+  %h1= t('.last-lessons-title')
+  %ul
+    - @last_lessons.each do |lesson|
+      %li
+        = link_to lesson.title, lesson_path(lesson)
+
+  %p
+    = link_to t('.lessons'), lessons_path
+    - unless current_user.remote?
+      = link_to t('.create_lesson'), new_lesson_path
+
+%section.last-definitions
+  %h1= t('.last-definitions-title')
+  %ul
+    - @last_definitions.each do |definition|
+      %li
+        = link_to definition.keyword, definitions_path(anchor: definition.keyword)
+
+  %p
+    = link_to t('.definitions'), definitions_path
+  - unless current_user.remote?
+    = link_to t('.create_definition'), new_definition_path
+
+

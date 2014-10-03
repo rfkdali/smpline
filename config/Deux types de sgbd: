@@ -1,0 +1,13 @@
+Deux types de sgbd:
+
+SGBD - R (relationnel)
+-Oracle
+-MySql
+-POSTGRL
+-SQLITE
+
+NOSQL
+(Document, key/value)
+MongoDB (Document)
+Redis(Key/value)
+

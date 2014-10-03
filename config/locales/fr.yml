@@ -1,0 +1,218 @@
+fr:
+  layouts:
+    application:
+      home: "Tableau de bord"
+      title_window: "Simplonline"
+      title: "Simplonline"
+      update_login: "Mon compte"
+      logout: "Se déconnecter"
+      footer-text: "Un site réalisé par [simplon.co](http://simplon.co) avec un design de [Pierre Kowarsky](http://pierre-kowarsky.fr) le tout hébergé chez [appsdeck.eu](http://appsdeck.eu)"
+      contact: "Contact"
+      legal: "Mentions légales"
+      login: "Se connecter"
+      email: "Email"
+      password: "Mot de passe"
+      reset_password: "Mot de passe oublié ?"
+  reset_passwords:
+    new:
+      title: "Demande de renouvellement de mot de passe"
+      email: "Email"
+      ask_for_reset_password: "Envoyer"
+    edit:
+      title: "Changement de mot de passe"
+      submit: "Enregistrer"
+  users:
+    show:
+      title: "Profile: %{name},"
+      lessons: "voir tous les cours"
+      email: "email: [%{email}](mailto:%{email})."
+    edit:
+      title: "Modifier mon compte"
+      user_name: "Nom"
+      cancel: "Annuler"
+      submit: "Mettre à jour"
+  messages:
+    index:
+      title: 'Messages'
+    new:
+      title: "Poster un nouveau message"
+      cancel: 'Retour'
+      post_message: "Poster"
+    show:
+      post_comment: 'Poster un commentaire'
+      cancel: 'Retour'
+      title: 'Message'
+  lessons:
+    new:
+      title: "Créer une session"
+      create: "Créer"
+    edit:
+      title: "Modifier une session"
+      update: "Mettre à jour"
+      cancel: "Annuler"
+    form:
+      description: "Édito"
+      title_field: "Titre"
+      publish_at_field: "Publié le"
+    index:
+      title: "Toutes les sessions"
+      definitions: 'Lexique'
+      create_lesson: "Ajouter une session"
+    show:
+      edit: "Éditer"
+      add_chapter: "Ajouter un chapitre"
+      add_qcm: "Ajouter un QCM"
+      add_exercice: "Ajouter un Exercice"
+      lessons: 'Toutes les sessions'
+  exercices:
+    new:
+      title: 'Créer un exercice'
+      submit: 'Enregistrer'
+    form:
+      response: "Réponse attendue"
+      title_field: "Titre"
+      consigne: "Consigne"
+      format_response: "Format de la réponse"
+      echantillon: "Échantillon"
+      format_echantillon: "Format de l'échantillon"
+  qcms:
+    show:
+      back_to_lesson: "Retour à la session"
+      edit: "Modifier"
+      respond: "Répondre"
+      edit_question: "Modifier"
+      delete_question: "Supprimer"
+      add_question: "Ajouter une question"
+    form:
+      description: "Description"
+      title: "Titre"
+    new:
+      cancel: "retour"
+      create: "Enregistrer"
+      title: "Créer un nouveau QCM"
+    edit:
+      title: "Mise à jour de QCM"
+      cancel: "Retour"
+      update: "Modifier"
+  answers:
+    new:
+      title: "Répondre au QCM"
+  chapters:
+    new:
+      title: "Créer un chapitre"
+      create: "Enregistrer"
+      cancel: "annuler"
+    edit:
+      title: 'Modifier un chapitre'
+      update: 'Mettre à jour'
+      cancel: 'annuler'
+  definitions:
+    index:
+      title: 'Toutes les définitions'
+      readmore: '...[Lire la suite]'
+      add_keyword: 'Ajouter une définition'
+    new:
+      title: 'Créer un mot-clé'
+      create: 'Enregistrer'
+      cancel: 'annuler'
+    edit:
+      title: 'Modifier un mot-clé'
+      update: 'Mettre à jour'
+      cancel: 'Annuler'
+    show:
+      edit: 'Modifier cette définition'
+      delete: 'Supprimer cette définition'
+  questions:
+    form:
+      add_choice: "Ajouter un choix"
+      delete_choice: "Supprimer ce choix"
+    new:
+      title: "Créer une question"
+      cancel: "Retour"
+      submit: "Enregistrer"
+    edit:
+      title: "Mise à jour de question"
+      create: "Enregistrer"
+      cancel: "Retour"
+      delete_choice: "Supprimer ce choix"
+  placeholder:
+    content: "ex; Un avis, une questions"
+    email: 'me@example.com'
+    number: '0'
+    password: '****'
+    name: 'Edgar Hoover'
+    message: 'All your data are belongs to us...'
+    chapter_title: 'A propos de code...'
+    chapter_content: 'Nous avons découvert cette semaine... '
+    definition_keyword: 'De quel terme parlons-nous'
+    definition_description: "Une manière de l'expliquer serait de dire..."
+    definition_url: 'Un lien qui illustre le propos'
+    description: "Bonjour à tous, ..."
+    title: "Nous avons découvert cette semaine..."
+    date: "Contenu publié le"
+  static:
+    dashboard:
+      messages: 'Tous les message'
+      post_new_message: 'Poster un message'
+      lessons: 'Toutes les sessions'
+      definitions: 'Lexique'
+      title: 'Tableau de bord'
+      last-message-title: "Voici les derniers messages sur le forum"
+      last-lessons-title: "Les dernières sessions disponibles"
+      last-qcms-title: "Les derniers QCMs"
+      last-definitions-title: "Les dernières Définitions"
+      create_lesson: "Créer une session"
+      create_definition: "Ajouter un mot dans le lexique"
+    legal:
+      title: "Mentions légales"
+      content: "Ce site appartient à Simplon(tm)..."
+    welcome:
+      title: "Bienvenue sur Simplonline"
+      explain: "[Simplonline](http://simplon.co/foad) est une plateforme permettant aux apprenants qui sont en formation physiquement à Montreuil, aux inscrits à la Formation Ouverte A Distance (FOAD) et aux ancien(ne)s Simplonien(ne)s d'interagir et de partager leurs expériences. Chaque semaine, le lundi vers 18h, les apprenants en formation à Montreuil mettront à disposition des inscrits à la FOAD un _cours_ contenant le meilleur de ce qu'ils ont appris la semaine passée ainsi que des exercices, des ressources (screencasts, tutoriels, liens pour aller plus loin). Le forum de discussion commun permettra de prolonger le _cours_, de partager les découvertes et d'échanger par la pratique, et aussi de prolonger les questions/réponses sur les ressources. Le temps de travail estimé pour les apprenants de la FOAD est de 2 à 4h par semaine, mais des ressources pourront satisfaire la soif de celles et ceux qui en veulent plus ;-)
+
+
+Le démarrage aura lieu le *6 octobre 2014*. Les inscriptions seront closes à partir de cette date.
+
+
+Les premiers jours seront orientés autour des fondamentaux. L'idée étant de faire le _tour du propriétaire_ en découvrant ou reparcourant l'univers du développeur (hardware, software) et du développement logiciel (outils, partiques d'équipes, langages, ...). Cela permettra de partir sur de bonnes bases communes, avec un vocabulaire et un niveau de connaissance théorique partagé. Pour les personnes physiquement présente, cela permettra aussi qu'elles fassent connaissance.
+
+
+Ensuite, nous passerons à un apprentissage pas-à-pas, en se mettant en situation sur des cas pratiques (logiciels libre, projets interne Simplon). Dans ce contexte nous partirons à la découverte de langages de présentation (HTML, CSS), de langages de programmation (Ruby, Python, Java, Go, Haskell, Erlang, Clojure, Javascript). Nous explorerons également divers frameworks et outils (Sinatra, Rails, Snap, React, ...).
+
+
+Nous organiserons également des rencontres physiques à l'occasion d'évènements pour faciliter les échanges."
+    contact:
+      title: "Contact"
+      your_email: "Email"
+      your_name: "Nom"
+      your_message: "Message"
+      send: "Envoyer"
+      cancel: "Annuler"
+  user_mailer:
+    reset_password:
+      subject: "Votre accès à la plateforme Simplonline - FOAD de Simplon.co"
+      body: "
+        Bonjour %{user_name},
+
+        L'aventure va bientôt commencer et vous pouvez dès maintenant accéder à la plateforme Simplonline. Pour cela, merci de vous rendre sur la page (%{link_to_reset_password}) et de changer votre mot de passe.
+
+        Vous pourrez ensuite vous connecter à la plateforme en utilisant votre adresse mail et votre mot de passe.
+
+        Si jamais ce message ne correspond pas à une inscription ou une demande de votre part, merci de nous le signaler à [team@simplon.co](mailto:team@simplon.co).
+
+        À très bientôt !
+
+        L'équipe Simplon.co
+      "
+  tags:
+    kata: "Kata"
+    book_review: "Livre"
+    code_review: "Explication de code"
+    tools: "Outils"
+    framework: "Framework & Lib"
+  time:
+    formats:
+      default: "%d/%m/%Y %H:%S"
+  date:
+    formats:
+      default: "%d/%m/%Y %H:%S"

@@ -1,0 +1,13 @@
+%h2= @definition.keyword
+
+%p= @definition.description
+
+%p
+  = link_to t('.definitions'), definitions_path
+  - unless current_user.remote?
+    = link_to t('.edit'), edit_definition_path(@definition)
+
+    = form_for @definition, method: :delete do |d|
+      = d.submit t('.delete')
+
+

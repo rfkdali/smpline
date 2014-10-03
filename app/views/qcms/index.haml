@@ -1,0 +1,5 @@
+- @qcms.each do |qcm|
+  %p
+    = link_to "QCM #{qcm.id}: #{qcm.title}", qcm_path(qcm.id)
+    %br
+    = qcm.desc

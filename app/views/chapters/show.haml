@@ -1,0 +1,21 @@
+%section
+  %h1= @chapter.title
+
+  %article.content
+    :markdown
+      #{@chapter.content}
+
+  %p.tags
+    - @chapter.tags.each do |tag|
+      = link_to(t("tags.#{tag}"), tag_path(id: tag))
+
+  %p.authors
+    - @chapter.authors.each do |author|
+      = link_to(author.name, user_path(author))
+
+%nav
+  = link_to t('.back_to_lesson'), lesson_path(@lesson)
+  - unless current_user.remote?
+    = link_to t('.edit'), edit_lesson_chapter_path(@lesson, @chapter)
+
+

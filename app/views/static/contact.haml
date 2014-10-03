@@ -1,0 +1,19 @@
+%h3
+  = t('.title')
+
+= form_tag do
+  %p
+    = label :email, t('.your_email')
+  %p
+    = email_field_tag :email, '', required: true, placeholder: t('placeholder.email')
+  %p
+    = label :name, t('.your_name')
+  %p
+    = text_field_tag :name, '', placeholder: t('placeholder.name')
+  %p
+    = label :message, t('.your_message')
+  %p
+    = text_area_tag :message, '', placeholder: t('placeholder.message')
+  %p
+    = submit_tag t('.send')
+    = link_to t('.cancel'), root_path

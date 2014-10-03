@@ -1,0 +1,10 @@
+%h2= t('.title')
+
+= form_for Qcm.new, url: lesson_qcms_path(@lesson) do |f|
+
+  = render partial: 'form', locals: {f: f}
+
+  %p
+    = f.submit t('.create')
+    = link_to t('.cancel'), lesson_path(@lesson)
+

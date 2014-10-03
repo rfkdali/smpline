@@ -1,0 +1,16 @@
+%p
+  = f.label :title, t(".title")
+%p
+  = f.text_field :title
+
+%p
+  = f.label :desc, t(".description")
+%p
+  = f.text_area :desc
+
+%p
+  = f.label :author_ids
+  %br
+  = f.select :author_ids, @available_authors.map{|a| [a.name, a.id]}, {}, multiple: true
+
+
