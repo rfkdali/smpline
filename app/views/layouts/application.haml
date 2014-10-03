@@ -23,16 +23,16 @@
           = submit_tag t('.login'), class: 'link'
         = link_to t('.reset_password'), new_reset_password_path
 
-    %header.header
-      %h1= link_to t('.title'), root_path, class: 'header-title'
-
-      .notification
+        .notification
         - if flash[:error].present?
           %p.label.flash-error= "» #{flash[:error]}"
         - if flash[:alert]
           %p.label.flash-error= "» #{flash[:alert]}"
         - if flash[:notice]
           %p.label.flash-notice= "» #{flash[:notice]}"
+
+    %header.header
+      %h1= link_to t('.title'), root_path, class: 'header-title'
 
     %main.content
       = yield

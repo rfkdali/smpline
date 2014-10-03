@@ -228,7 +228,11 @@ body {
   width: 100%;
 }
 
-a, button, .button { cursor: pointer; text-decoration: none;}
+a, button, .button { cursor: pointer; text-decoration: none; color: #333;}
+
+.connexion a:nth-child(2){
+  color: #EE1752;
+}
 
 .color-01 { color: rgba(94,52,12,1);}    /*marron foncé*/
 .color-02 { color: rgba(12,89,95,1);}    /*bleu foncé*/
@@ -395,3 +399,6 @@ a, button, .button { cursor: pointer; text-decoration: none;}
   background: rgba(237,71,115,1);
 }
 
+.notification .flash-notice, .notification .flash-error{
+  color: #333;
+}
